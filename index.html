@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="external">
+      <div class="container">
+        <!-- Player 1 -->
+        <div id="home">
+          <h3 class="player-label">Player 1</h3>
+          <p class="score" id="home-score">4000</p>
+          <div class="minusbuttons">
+            <button class="btn" onclick="subtractScore('home', 50)">-50</button>
+            <button class="btn" onclick="subtractScore('home', 100)">
+              -100
+            </button>
+            <button class="btn" onclick="subtractScore('home', 500)">
+              -500
+            </button>
+          </div>
+          <div class="plusbuttons">
+            <button class="btn" onclick="addScore('home', 50)">+50</button>
+            <button class="btn" onclick="addScore('home', 100)">+100</button>
+            <button class="btn" onclick="addScore('home', 500)">+500</button>
+          </div>
+        </div>
+
+        <!-- Player 2 -->
+        <div id="guest">
+          <h3 class="player-label">Player 2</h3>
+          <p class="score" id="guest-score">4000</p>
+          <div class="minusbuttons">
+            <button class="btn" onclick="subtractScore('guest', 50)">
+              -50
+            </button>
+            <button class="btn" onclick="subtractScore('guest', 100)">
+              -100
+            </button>
+            <button class="btn" onclick="subtractScore('guest', 500)">
+              -500
+            </button>
+          </div>
+          <div class="plusbuttons">
+            <button class="btn" onclick="addScore('guest', 50)">+50</button>
+            <button class="btn" onclick="addScore('guest', 100)">+100</button>
+            <button class="btn" onclick="addScore('guest', 500)">+500</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restart Button -->
+      <div class="restart">
+        <button class="btn" onclick="restartGame()">Restart</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -39,8 +39,8 @@ function subtractScore(player, points) {
     let currentScore = scores[player];
   
     // Define the speed and increment for the animation
-    const animationSpeed = 7; // speed of the animation (milliseconds)
-    const increment = 20; // decrement in steps of 10 points
+    const animationSpeed = 15; // speed of the animation (milliseconds)
+    const increment = 10; // decrement in steps of 10 points
   
     // Use setInterval to animate the score change
     let interval = setInterval(function() {
